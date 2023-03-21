@@ -14,7 +14,7 @@ var button = document.getElementById("btnSearch");
 
 button.onclick = function () {
     var text = document.getElementById("textBoxEl").value;
-    window.open("https://learn.iti.com/pages/barnhart-u-university?label=search&value= + text);
+    window.open("https://learn.iti.com/pages/barnhart-u-university?query= + text);
 }</script>
 	  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -79,9 +79,11 @@ body{
 }	
 	
 .fadedown {
-	opacity: 0.9;
-    background-image: linear-gradient(to bottom,rgba(132,132,130,0.8),rgba(132,132,130,0) 98%);
-    top: 0;		
+	opacity: 1;
+    background-image: linear-gradient(to bottom,rgba(132,132,130,1),rgba(132,132,130,0) 100%);
+    top: 10;	
+	height: 30vh;	
+	display: inline-block;
 	}	
 	
 .fadeup {
@@ -205,6 +207,7 @@ body{
   background-size: 	cover; /* changed from "cover" */
   background-color: #848482; 
   background-image: url("https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/do8za5ffmcdj-SafetySectionBG.png");
+  
 }
 	
 #bu_parallax_safety_two {
@@ -380,8 +383,8 @@ body{
           </ul>
 	   
          <div class="search-container">
-    <form method="get" action="/https://learn.iti.com/pages/barnhart-u-monthly-update">
-      <input class="textBoxEl" type="text" placeholder="Search.." name="search">
+    <form method="get" action="https://learn.iti.com/pages/barnhart-u-university?">
+      <input id="textBoxEl" type="text" placeholder="Search.." name="query">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>
@@ -463,7 +466,8 @@ body{
 	
    </div>
 
-<div class="bu_parallax_container" id="bu_parallax_safety_one"></div>
+<div class="bu_parallax_container" id="bu_parallax_safety_one">	<div class="fadedown" style=""></div>	
+</div>
 <div class="bu_parallax_container" id="bu_parallax_safety_two">
 	<div class="section-content"  align="center">
 		<br>
@@ -530,7 +534,8 @@ body{
 	<div class="fadeup" style=""></div>	
 		
 </div>
-	<div class="bu_parallax_container" id="bu_parallax_training_one"></div>	  
+	<div class="bu_parallax_container" id="bu_parallax_training_one">	<div class="fadedown" style=""></div>	
+</div>	  
 <div class="bu_parallax_container" id="bu_parallax_training_two">
 		<div class="section-content"  align="center">
 			<br>
@@ -587,7 +592,8 @@ body{
 </div>	
 	
 	
-<div class="bu_parallax_container" id="bu_parallax_dot_one"></div>	
+<div class="bu_parallax_container" id="bu_parallax_dot_one">	<div class="fadedown" style=""></div>	
+</div>	
 <div class="bu_parallax_container" id="bu_parallax_dot_two">
 	<div class="section-content"  align="center">        	
 		<br>
@@ -644,7 +650,8 @@ body{
 </div>   
 
 
-	<div class="bu_parallax_container" id="bu_parallax_cares_one"></div>	
+	<div class="bu_parallax_container" id="bu_parallax_cares_one">	<div class="fadedown" style=""></div>	
+</div>	
 <div class="bu_parallax_container" id="bu_parallax_cares_two">
 		<div class="section-content"  align="center">
 			<br>
