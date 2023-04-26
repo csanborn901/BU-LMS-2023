@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BULMS Github 7</title>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BU 04262023</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>	  
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 	
+	
 <script>
 	  
 $(window).on("load",function() {
@@ -35,43 +33,112 @@ $(window).on("load",function() {
   $(window).scroll(function(){fade(false);}); //fade elements on scroll
 });
 	
-</script>	  
-  
-	  
+</script>	
+	
+<script>document.addEventListener("DOMContentLoaded", function(){
+  // add padding top to show content behind navbar
+  navbar_height = document.querySelector('#bu-topnav').offsetHeight;
+  document.body.style.paddingTop = navbar_height + 'px';
+}); </script>
+	
 <style>
+
 body{
   style="overflow:hidden"
-}
-
+}	
 	
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #2196F3;
-  color: white;
-}
+.bu-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+	gap: 10px;
+	}	
 	
-.search-container{
-	padding-right: 50px;  
+#bu-topnav {
+	background-color: #cc0033;
+	position: fixed;
+	z-index: 1;
+	overflow: hidden;
 	}
 	
+#bu-navbar{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	align-items: center;
+	align-content: center;
+	gap: 10px;
+	flex-grow: 2;
+	padding: 10px;
+	color: white;
+	}	
 
-.navbar .search-container {
-  text-align: right;
-}
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  
+}	
+	
+#bu-navbar li{
+	display: inline;	
+	padding: 10px;
+	}
 
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
+#bu-navbar li:hover{
+	background-color: white;
+	color: black;
+	}	
+	
+#bu-navbar li a{
+	display: inline;	
+	text-decoration: none;
+	color: white;
+	}	
 
-.topnav .search-container button {
-  float: right !important;
+#bu-navbar li:hover a{
+	color: black;
+	}		
+
+#bu-navbar-collapse {
+		
+	}	
+	
+.nav-item {
+	font-size: 1.2rem !important;	
+		}	
+
+.navbar-brand {
+	font-weight: bold;	
+		}	
+
+.bu-brand{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	align-items: center;
+	align-content: center;
+	gap: 10px;
+	flex-grow: 1;
+	padding: 10px;
+	}	
+	
+.bu-search {
+  padding: 10px 10px;
+  display: flex;
+  flex-grow: 2;
+  justify-content:   center;
+	}	
+	
+.bu-search bu-btn {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 2;
+  flex-basis: auto;
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
@@ -81,41 +148,23 @@ body{
   cursor: pointer;
 }
 
-.topnav .search-container button:hover {
-  background: #ccc;
-}
 
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
+#bu-searchbox {
+	width: 80%;	
+	border-radius: 5px;
+	border: none;
+	margin-right: 10px;
+	}
+
+	
+#bu-btn {
+	border-radius: 5px;
+	border: none;
+	}
+	
+.bu-search button:hover {
+  background: #ffffff;
 }	
-	
-.fadedown {
-	opacity: 1;
-    background-image: linear-gradient(to bottom,rgba(132,132,130,1),rgba(132,132,130,0) 100%);
-    top: 10;	
-	height: 30vh;	
-	display: inline-block;
-	}	
-	
-.fadeup {
-	opacity: 1;
-    background-image: linear-gradient(to top,rgba(132,132,130,1),rgba(132,132,130,0) 100%);
-    top: 0;	
-	height: 40vh;
-	}	
 	
 .bu_parallax_container {
   min-height: 100vh;
@@ -128,66 +177,7 @@ body{
   flex-direction: column;
   flex-wrap: wrap;
   justify-content:flex-end;
-}
-
-.card {
-  margin: 0px 0px 10px 0px !important;			
-		}	
-
-.nav-item {
-	font-size: 1.2rem !important;	
-		}	
-		
-.section-bg-red{
-	background-color: #cc0033;		
-		}
-.section-bg-gray{
-	background-color: #848482;	
-	height: 5vh;
-		}
-		
-.section-content{
-	display: ;
-	margin: auto;
-	width: 100%;
-		}		
-
-		
-.section-title-red {
-  	display: flex;
-	color: white;
-	background-color: #cc0033;
-	height: 80px;
-  	justify-content: center;
- 	align-items: center;
-		}
-		
-.section-title-gray {
-  	display: flex;
-	color: white;
-  	background-color: #848482;
- 	height: 80px;
-  	justify-content: center;
- 	align-items: center;
-		}
-		
-.section-title-white {
-  	display: flex;
-	color: #CC0033;
-	font-weight: bold;
-  	background-color: #ffffff;
- 	height: 80px;
-  	justify-content: center;
- 	align-items: center;
-		}		
-
-.nav-item {
-	font-size: 1.2rem !important;	
-		}	
-
-.navbar-brand {
-	font-weight: bold;	
-		}
+}	
 
 #bu_parallax_logo {
   background-position: center center;
@@ -214,108 +204,12 @@ body{
   background-size: 	100vw; /* changed from "cover" */
   background-color: #848482; 
   background-image: url("https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/opx38v671q4d-BUGrayBG.png");
-}			
+}				
 	
-#bu_parallax_videos_one {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 	100vw; /* changed from "cover" */
-  background-color: #848482; 
-  background-image: url("https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/mn6c3wej1r2r-BUGrayBG.png");
-}
+.card {
+  margin: 0px 0px 10px 0px !important;			
+		}	
 	
-#bu_parallax_videos_two {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 	100vw; /* changed from "cover" */
-  background-color: #848482; 
-  background-image: url("https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/mn6c3wej1r2r-BUGrayBG.png");
-}	
-	
-#bu_parallax_videos_two_two {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 	100vw; /* changed from "cover" */
-  background-color: #848482; 
-  background-image: url("https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/mn6c3wej1r2r-BUGrayBG.png");
-}		
-	
-#bu_parallax_safety_one {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 	100vw; /* changed from "cover" */
-  background-color: #848482; 
-  background-image: url("https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/mn6c3wej1r2r-BUGrayBG.png");
-  
-}
-	
-#bu_parallax_safety_two {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 	100vw; /* changed from "cover" */
-  background-color: #848482; 
-  background-image: url("https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/mn6c3wej1r2r-BUGrayBG.png");
-}		
-	
-#bu_parallax_training_one {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 	100vw; /* changed from "cover" */
-  background-color: #848482; 
-  background-image: url("https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/mn6c3wej1r2r-BUGrayBG.png");
-}
-	
-#bu_parallax_training_two {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 	100vw; /* changed from "cover" */
-  background-color: #848482; 
-  background-image: url("https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/mn6c3wej1r2r-BUGrayBG.png");
-}
-
-#bu_parallax_dot_one {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 	100vw; /* changed from "cover" */
-  background-color: #848482; 
-  background-image: url("https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/mn6c3wej1r2r-BUGrayBG.png");
-}
-	
-#bu_parallax_dot_two {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 	100vw; /* changed from "cover" */
-  background-color: #848482; 
-  background-image: url("https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/mn6c3wej1r2r-BUGrayBG.png");
-}
-
-#bu_parallax_cares_one {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 	100vw; /* changed from "cover" */
-  background-color: #848482; 
-  background-image: url("https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/mn6c3wej1r2r-BUGrayBG.png");
-}
-	
-#bu_parallax_cares_two {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 	100vw; /* changed from "cover" */
-  background-color: #848482; 
-  background-image: url("https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/mn6c3wej1r2r-BUGrayBG.png");
-}
-		
 .btn-primary {
   color: #fff;
   background-color: #cc0033;
@@ -347,101 +241,71 @@ body{
   background-color: #cc0033;
   border-color: #cc0033;
 }
+
+.section-title-red {
+  	display: flex;
+	color: white;
+	background-color: #cc0033;
+	height: 80px;
+  	justify-content: center;
+ 	align-items: center;
+		}
 		
-.btn-outline-success:hover {
-  color: #CC0033;
-  background-color: white;
-  border-color: white;
-}
+.section-title-gray {
+  	display: flex;
+	color: white;
+  	background-color: #848482;
+ 	height: 80px;
+  	justify-content: center;
+ 	align-items: center;
+		}
 		
-.dropdown-item:hover, .dropdown-item:focus {
-  color: white;
-  text-decoration: none;
-  background-color: #CC0033;
-}
+.section-title-white {
+  	display: flex;
+	color: #CC0033;
+	font-weight: bold;
+  	background-color: #ffffff;
+ 	height: 80px;
+  	justify-content: center;
+ 	align-items: center;
+		}	
 
-.dropdown-item.active, .dropdown-item:active {
-  color: white;
-  text-decoration: none;
-  background-color: #cc0033;
-}		
-
-.bg-dark {
-  background-color: #cc0033 !important;
-}
-		
-.jumbotron {
-  padding: 0rem 0rem !important;
-  margin-bottom: 2rem !important;
-  background-color: #e9ecef !important;
-  border-radius: 0.3rem !important;
-}
-
-@media (min-width: 576px) {
-  .jumbotron {
-    padding: 4rem 2rem 0rem !important;
-	border-bottom: 0 !important;
-  }
-}
-
-.jumbotron-fluid {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-  padding-bottom: 0 !important;
-  margin: 0 !important;
-}		
-
-.fade {
-	  background-color: #848482; 	
-	}	
-
+	
 	
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	
-	
+	.bu-navbar {}
 	}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-	
-	
-	}
+@media only screen and (min-width: 600px) {...}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	
-	
-	}
+@media only screen and (min-width: 768px) {...}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-	
-	
-	}
+@media only screen and (min-width: 992px) {...}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-	.bu_parallax_container{}
+@media only screen and (min-width: 1200px) {...}	
 	
-	}	
-	
+</style>	
 	
 	
-</style> 
-	  
 </head>
 
 <body>
-
-<div class="text-center">  
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <img src="https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/mlr4t5uw4yo8-BU_LogoColorMatched.png" style="max-height:60px;"/><a class="navbar-brand" href="#">Barnhart University</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	
+<div class="bu-container fixed-top" id="bu-topnav">
+  <nav class="navbar navbar-expand-lg navbar-dark" id="bu-navbar">
+	<div class="bu-brand">
+	<img src="https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/mlr4t5uw4yo8-BU_LogoColorMatched.png" style="max-height:60px;"/>
+	<h5 class="" href="#">Barnhart University</h5> 
+	</div>
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+       <div class="collapse navbar-collapse navbar-expand" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
 			  <li class="nav-item">
                 <a class="nav-link active" href="#bu_parallax_videos_two_two">Videos</a>
@@ -459,19 +323,16 @@ body{
                 <a class="nav-link active" href="#bu_parallax_cares_two">Barnhart Cares</a>
              </li>
           </ul>
-		   
-       </div>
+       </div>	
+  </nav>
 	
-	<div class="search-container">
-<input type="text" id="bu-searchbox" placeholder="Search..." onkeyup="if(event.keyCode == 13) window.open('https://learn.iti.com/pages/barnhart-u-university?label=search&value=' + document.getElementById('bu-searchbox').value);"/>
+  <div class="bu-search">
+	<input type="text" id="bu-searchbox" placeholder="  Search..." onfocus="this.placeholder=''" onblur="this.placeholder='  Search...'" onkeyup="if(event.keyCode == 13) window.open('https://learn.iti.com/pages/barnhart-u-university?label=search&value=' + document.getElementById('bu-searchbox').value);"/>
 <button type="submit" id="bu-btn" value="Search" onClick="javascript: window.open('https://learn.iti.com/pages/barnhart-u-university?label=search&value=' + document.getElementById('bu-searchbox').value);" ><i class="fa fa-search"></i></button>
-    </div>
+	</div>
 	
-    </nav>
-    </div>
-<!-- Hidden	 
-<div class="bu_parallax_container" id="bu_parallax_logo"></div>
- -->
+</div>	
+
 <div class="bu_parallax_container" id="bu_parallax_red">	
 	<div class="section-content"  align="center">
 		<br>
@@ -770,6 +631,8 @@ body{
 	</div>
 		
 </div>	  
-
-	</body>
+	
+	
+	
+</body>
 </html>
