@@ -46,8 +46,8 @@ $(window).on("load",function() {
 <style>
 
 body{
-  style="overflow:hidden"
   background-color: #cc0033;
+  overflow-x: hidden;
 }	
 	
 .bu-container {
@@ -59,11 +59,11 @@ body{
 	align-items: center;
 	align-content: center;
 	gap: 10px;
+	width: ;
 	}	
 	
 #bu-topnav {
 	background-color: #cc0033;
-	position: fixed;
 	z-index: 2;
 	overflow: hidden;
 	}
@@ -177,13 +177,9 @@ body{
 }	
 	
 .bu_parallax_container {
-  min-height: 100vh;
   border-bottom: 0px solid white;
   padding-top: 120px;;
   align-items: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -200,11 +196,8 @@ body{
 }	
 	
 .bu_parallax_red {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 	100vw; /* changed from "cover" */
   background-color: #CC0033;
+  display: flex;
 }
 
 .red-block{
@@ -263,10 +256,10 @@ body{
 		
 .section-content{
 	display: ;
-	height: 80vh;
 	margin: auto;
 	width: 100%;
 	z-index: 1;
+	padding-bottom: 120px;
 		}	
 
 .bu-section-title {
