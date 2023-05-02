@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Barnhart U Videos</title>
+	
+<style>
+
+.video-button-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	gap: 10px;
+	}
+	
+.video-filter-button {
+  color: #fff;
+  background-color: #cc0033;
+  border-color: #cc0033;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, .25);
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  font-family: Roboto;
+	
+	}
+	
+	
+</style>	
+	
+	
+</head>
+
+<body>
+
+<div class="video-button-container">
+	
+	<button class="video-filter-button" onclick="location.reload();location.href='https://learn.iti.com/pages/barnhart-u-university?label=search&value=rigging';">Weekly BU's</button>
+	<button class="video-filter-button">Monthly Company Update</button>
+	<button class="video-filter-button">Lifting Equipment</button>
+	<button class="video-filter-button">Machinery Moving</button>
+	<button class="video-filter-button">Transportation</button>
+	<button class="video-filter-button">Structural</button>
+	<button class="video-filter-button">Rigging</button>
+	<button class="video-filter-button">Inspections</button>
+</div>
+
+</body>
+</html>
