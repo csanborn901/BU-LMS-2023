@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>	  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	
+	
+<style>
+body {
+	padding: 20px;
+	}	
+	
+.dropbtn {
+  background-color: #cc0033;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+<h2>Search/Filter Dropdown</h2>
+<p>Click on the button to open the dropdown menu, and use the input field to search for a specific dropdown link.</p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Select Qual Card</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="">QC-001 Goldhofer THP Operators</a>
+<a href="">QC-002 Goldhofer PST Operators</a>
+<a href="">QC-002E Goldhofer PSTe Operators</a>
+<a href="">QC-003 Dolly System Operator</a>
+<a href="">QC-005 Prime Mover-Big Kenworth Drivers</a>
+<a href="">QC-006 Prime Mover-Ramob Drivers</a>
+<a href="">QC-007 Fab Shop-Burn Table Operators</a>
+<a href="">QC-008 Forklift Operator - OSHA General</a>
+<a href="">QC-008A Forklift-Telescoping Boom</a>
+<a href="">QC-009 Forklift Operator-120K</a>
+<a href="">QC-010 Forklift Operator 40K-80K</a>
+<a href="">QC-011 Gantry Operators</a>
+<a href="">QC-012 Console-Diesel Hydraulic Pump</a>
+<a href="">QC-013 Multi-Purpose Hydraulic Pump</a>
+<a href="">QC-014 Rail Gantry Operators</a>
+<a href="">QC-015 500T Slide System Op</a>
+<a href="">QC-015A 100T Slide System Op</a>
+<a href="">QC-016 Stand Jack (850,650,450,300)</a>
+<a href="">QC-016A Strand Lift-132TON</a>
+<a href="">QC-017 PM-Big Peterbuilt Driver</a>
+<a href="">QC-018 Prime Mover-Pay Hauler</a>
+<a href="">QC-019 Prime Mover-Pacific Driver</a>
+<a href="">QC-020 Prime Mover Osh Kosh Driver</a>
+<a href="">QC-021 12 Wide Trailer</a>
+<a href="">QC-022 Gooseneck Trailers</a>
+<a href="">QC-023 Muvall Trailers</a>
+<a href="">QC-024 Stretch Trailers</a>
+<a href="">QC-025 Super Trailer</a>
+<a href="">QC-026 Tank Trailer</a>
+<a href="">QC-028 Steerable Dollies (Trail King)</a>
+<a href="">QC-029 Stator Frame Op</a>
+<a href="">QC-030 Aerial Lift Operator</a>
+<a href="">QC-032 300T Load Cell Weighing System</a>
+<a href="">QC-033 Fab Shop - Ironworker Op</a>
+<a href="">QC-034 Fab Shop - Drill Press Op</a>
+<a href="">QC-034A Fab Shop - Flexarm Tapping Machine Operator</a>
+<a href="">QC-035 Shop Overhead Crane Operator</a>
+<a href="">QC-035A Shop Jib Crane Operator</a>
+<a href="">QC-036 500 TN Hoist</a>
+<a href="">QC-037 Basic Rigger</a>
+<a href="">QC-038 Tailing Device</a>
+<a href="">QC-039 Cozad Super Trailer</a>
+<a href="">QC-040 Blade Hauling Trailer</a>
+<a href="">QC-041 CMV Driver</a>
+<a href="">QC-043 Powered Rollers Operator</a>
+<a href="">QC-044 Landoll Rollback Trailer</a>
+<a href="">QC-045 Climbing Jack - Operator (50T, 100T, 200T Jacks)</a>
+<a href="">QC-046 PIM Equip Operator</a>
+<a href="">QC-047 PIM Maintenance and Inspection</a>
+<a href="">QC-048 Pull-Up Gantries</a>
+<a href="">QC-049 Gantry Crane Operator (Memphis Yard)</a>
+<a href="">QC-050 Prime Mover Old Mack Driver</a>
+<a href="">QC-051 Prime Mover-Little John Driver</a>
+<a href="">QC-054 150T Tip Stick</a>
+<a href="">QC-054A 150 kip Tip Stick Operator Qualification Card</a>
+<a href="">QC-054B 27 kip Tip Stick Operator</a>
+<a href="">QC-055 BCR-Nooter HRSG Frame</a>
+<a href="">QC-056 Powered Roller Saddle Operator</a>
+<a href="">QC-057 Signal Person</a>
+<a href="">QC-058 Air Skate Operator</a>
+<a href="">QC-059 Barnhart Turntable</a>
+<a href="">QC-062 Prime Mover-International</a>
+<a href="">QC-063 Hydrospex Load Weighing System</a>
+<a href="">QC-064 LR 1700 Barge Operators</a>
+<a href="">QC-065 LR 1700 Barge Rigger</a>
+<a href="">QC-066 LR 1700 Barge Superintendant</a>
+<a href="">QC-067 Crane Mechanic</a>
+<a href="">QC-068 AD Director</a>
+<a href="">QC-069 MLT AD Director</a>
+<a href="">QC-070 Multi Tagline Device</a>
+<a href="">QC-071 Trainer 1 kip Capacity Single Blade</a>
+<a href="">QC-072 1 kip Capacity Single Blade</a>
+<a href="">QC-073 Journeyman Rigger</a>
+<a href="">QC-074 Trainer</a>
+<a href="">QC-075 Tagline Device</a>
+<a href="">QC-076 Slide-Swivel Rigging Device</a>
+<a href="">QC-078 Operational Risk Manager</a>
+<a href="">QC-079 30 kip Sliding Gantry</a>
+<a href="">QC-080 Western Star Prime Mover Driver</a>
+<a href="">QC-081 Skidsteer (Bobcat)</a>
+<a href="">QC-083 Wind Div Operator-Oiler</a>
+<a href="">QC-084 FAB SHOP DoAll Band Saw Operator</a>
+<a href="">QC-085 FAB SHOP HE & M Band Saw Operator</a>
+<a href="">QC-086 FAB SHOP 14 Plate Shear Press Operator</a>
+<a href="">QC-087 FAB SHOP - Press Brake Operator</a>
+<a href="">QC-090 Basic Crane Orientation</a>
+<a href="">QC-092 Confined Space Training</a>
+<a href="">QC-093 25 Kip Hoist</a>
+<a href="">QC-097 Goldhofer TexTrac Operator</a>
+<a href="">QC-099 Fall Protection Training</a>
+<a href="">QC-100 1600 kip 24 in End Truck</a>
+<a href="">QC-101 200T Hoist</a>
+<a href="">QC-103 Large MOCCS Moving Counterweight</a>
+<a href="">QC-104 GS-800</a>
+<a href="">QC-105 Eastrac Westrac</a>
+<a href="">QC-108 Nelson Girder</a>
+<a href="">QC-109 HYDROSPEX HLC500 AND HLC1000 CALIBRATION</a>
+<a href="">QC-112 Wind Tower Climber</a>
+<a href="">QC-114 Load Handling Planner</a>
+<a href="">QC-115 Winch Truck</a>
+<a href="">QC-116 Testing Center</a>
+<a href="">QC-117 Airfloat Platform Operator</a>
+<a href="">QC-118 BOP Down Ending Frame</a>
+<a href="">QC-119 PIM SAFER FLEX Equipment Maintenance</a>
+<a href="">QC-120 PIM SAFER FLEX Emergency Response</a>
+<a href="">QC-121 TSP</a>
+<a href="">QC-122 Welding Performance Qualification Record</a>
+<a href="">QC-123 Scheuerle Highway Trailer 10.0</a>
+<a href="">QC-124- Engineering Reviewer</a>
+<a href="">QC-127 Barnhart Culture</a>
+<a href="">QC-157 CBRIS Ground Lead</a>
+<a href="">QC-158 CBRIS Tower Lead</a>
+<a href="">QC-159 CBRIS Winch Operator</a>
+<a href="">QC-160 CBRIS Tagline Device</a>
+<a href="">QC-161 Propane Handling</a>
+<a href="">QC-162 Mini MOCCS Moving Counterweight</a>
+<a href="">QC-163 Pull-Up Jack Operator</a>
+<a href="">QC-164 Electric Pallet Jack</a>
+<a href="">QC-166 Boom Truck Crane Operator Qual Card</a>
+<a href="">QC-167 Carry Deck Crane Operator Qual Card</a>
+<a href="">QC-168 Rough Terrain Crane Operator Qual Card</a>
+<a href="">QC-169 All Terrain Crane 300T and Greater Crane Operator Qual Card</a>
+<a href="">QC-170 All Terrain Crane from 160T to Less than 300T Crane Operator Qual Card</a>
+<a href="">QC-171 All Terrain Crane Less than 160T Crane Operator Qual Card</a>
+<a href="">QC-172 Hydraulic Truck Cranes 100T and Greater Crane Operator Qual Card</a>
+<a href="">QC-173 Hydraulic Truck Cranes from 50T to less than 100T Crane Operator Qual Card</a>
+<a href="">QC-174 Hydraulic Truck Cranes Less than 50T Crane Operator Qual Card</a>
+<a href="">QC-175 Telescopic Crawler Crane Operator Qual Card</a>
+<a href="">QC-176 Lattice Crawler Cranes 300T and Lower Crane Operator Qual Card</a>
+<a href="">QC-177 Lattice Crawler Cranes Greater than 300T Crane Operator Qual Card</a>
+<a href="">QC-178 Lattice Truck Cranes 300T and Lower Crane Operator Qual Card</a>
+<a href="">QC-179 Lattice Truck Cranes Greater than 300T Crane Operator Qual Card</a>
+<a href="">QC-180 Temporary Crane Operator Qual Card</a>
+<a href="">QC-181 Overhead Crane Operator Qual Card</a>
+<a href="">QC-182 - BEARING INSTALLATION AND REMOVAL DEVICE (B.I.R.D.)</a>
+<a href="">QC-184 SofTrac System Operator Qualification Card</a>
+<a href="">QC-185 Dual Lane Hauling Lead Driver</a>
+<a href="">QC-186 VERSA-LIFT OPERATOR Up To 60K QUALIFICATION CARD</a>
+<a href="">QC-187 VERSA-LIFT OPERATOR Over 60K QUALIFICATION CARD</a>
+<a href="">QC-188 Jacking Unifier</a>
+<a href="">QC-196 Blast Booth Attendant</a>
+<a href="">QC-197 Blast Booth Operator</a>
+<a href="">QC-198 Paint Prep Tech</a>
+<a href="">QC-199 Paint Tech</a>
+<a href="">QC-200 Shop Maintenance</a>
+<a href="">QC-201 Spyder Crane Operator Qual Card</a>
+<a href="">QC-202 TWINLIFT OPERATOR Qualification Card</a>
+<a href="">QC-203 TRI-LIFT OPERATOR Qualification Card</a>
+<a href="">QC-204 Scissor Lift Operator Qualification Card</a>
+<a href="">QC-205 BPU-750 Operator Qualification Card</a>
+<a href="">QC-206 Synchronous Movement System Qualification Card</a>
+<a href="">QC-207 Mega MOCCS Qualification Card</a>
+<a href="">QC-208 Super Shallow Slide System</a>
+<a href="">QC-209 Universal Blade Bar Operator</a>
+<a href="">QC-210 Goldhofer Service Jacks</a>
+<a href="">QC-211 Nelson Boom Launch Trailer</a>
+
+
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+
