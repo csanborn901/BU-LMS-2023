@@ -12,9 +12,9 @@
       }
 
       .cls-3 {
-        font-family: Roboto-bold, 'Roboto bold';
+        font-family: Roboto, 'Roboto';
         font-size: 47px;
-        font-weight: 300;
+        font-weight: 700;
       }
 
       .cls-4 {
