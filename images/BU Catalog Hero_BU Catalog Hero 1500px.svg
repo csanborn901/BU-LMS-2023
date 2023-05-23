@@ -4,7 +4,7 @@
   <defs>
     <style>
       .cls-1 {
-        letter-spacing: 0em;
+        letter-spacing: 1em;
       }
 
       .cls-2, .cls-3 {
