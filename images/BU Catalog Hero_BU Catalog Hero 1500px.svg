@@ -11,7 +11,7 @@
       }
 
       .cls-3 {
-        font-family: FranklinGothic-Demi, 'Franklin Gothic Demi';
+        font-family: Roboto, 'Roboto';
         font-size: 47px;
         font-weight: 300;
       }
