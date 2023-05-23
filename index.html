@@ -45,12 +45,14 @@ $(window).on("load",function() {
 
 <style>
 	
-::-webkit-scrollbar { display: none; overflow-x: hidden;}
+::-webkit-scrollbar {
+	display: none; 
+	overflow-x: hidden;
+	}
 
 body{
   background-color: #848482;
   overflow-x: hidden;
-  margin: 0px;
 }	
 	
 .bu-container {
@@ -88,6 +90,10 @@ body{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   
 }	
+	
+.navbar-toggler {
+		flex-shrink: 1;
+	}
 	
 #bu-navbar li{
 	display: inline;	
@@ -145,8 +151,8 @@ body{
 .bu-search {
   padding: 10px 10px;
   display: flex;
-  flex-grow: 2;
-  justify-content:   center;
+  flex-grow: 5;
+  justify-content:   left;
 	}	
 	
 .bu-search bu-btn {
