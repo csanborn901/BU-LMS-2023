@@ -14,6 +14,8 @@ html, body {max-width: 100%; overflow-x: hidden;}
 .company__school-name {color: #ffffff !important; font-size: 1rem; margin: 0px !important;}
 #bu-html-import {overflow:hidden; width=100%; background-color: #848482; height: 900px;}
 #bu-homepage-iframe{}
+footer .footer {height:100px !important;overflow:hidden !important;}
+footer .footer:hover {height:auto !important;}
 
 @media only screen and (max-width: 390px) {.company__school-name{display: none !important;}#bu-html-import{height:600px !important;}}
 
