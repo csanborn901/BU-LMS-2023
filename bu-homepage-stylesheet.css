@@ -12,7 +12,7 @@ body::-webkit-scrollbar {display: none !important;}
 body { -ms-overflow-style: none !important; scrollbar-width: none !important;}    
 html, body {max-width: 100%; overflow-x: hidden;}
 .company__school-name {color: #ffffff !important; font-size: 1rem; margin: 0px !important;}
-#bu-html-import {overflow:hidden; width=100%; background-color: #848482; height: 900px;}
+#bu-html-import {overflow:hidden; width=100%; background-color: #848482; height: 940px;}
 #bu-homepage-iframe{}
 .footer {height:20px !important;overflow:hidden !important;}
 .footer:hover {height:auto !important;}
