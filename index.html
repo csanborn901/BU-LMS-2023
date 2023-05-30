@@ -365,6 +365,10 @@ body{
   <nav class="navbar navbar-expand-lg navbar-dark" id="bu-navbar" style=";">
 	
 	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<script>$('.navbar-nav>li>a').on('click', function(){
+$('.navbar-collapse').collapse('hide');
+});</script>	
+		
       <span class="navbar-toggler-icon"></span>
     </button>
        <div class="collapse navbar-collapse navbar-expand" id="navbarSupportedContent">
