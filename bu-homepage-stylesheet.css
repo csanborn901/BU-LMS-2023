@@ -3,7 +3,6 @@
  <link rel="shortcut icon" type="image/png" href="https://csanborn901.github.io/BU-LMS-2023/favicon.png">
 
 [role=main]{background-color: #848482 !important; padding: 0 !important;} }
-:root { — app-height: 100%; } html, body { padding: 0; margin: 0; overflow: hidden; width: 100vw; height: 100vh; height: var( — app-height); }
 .widget--html_standard {padding: 0 !important;} 
 .header {background-color: #848482 !important;}
 .dashboard-header__name {color: #ffffff !important;}
