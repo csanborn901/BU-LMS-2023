@@ -13,7 +13,7 @@ body { -ms-overflow-style: none !important; scrollbar-width: none !important;}
 html, body {max-width: 100%; overflow-x: hidden;}
 .company__school-name {color: #ffffff !important; font-size: 1rem; margin: 0px !important;}
 #bu-html-import {overflow:hidden; width=100%; background-color: #848482; height: 900px;}
-#bu-homepage-iframe{overflow-x="hidden" frameBorder="0" height="1000px" width="100%" src="https://csanborn901.github.io/BU-LMS-2023}
+#bu-homepage-iframe{overflow-x="hidden"; frameBorder="0"; height="1000px"; width="50%" !important;}
 
 @media only screen and (max-width: 390px) {.company__school-name{display: none !important;}#bu-html-import{height:830px !important;}}
 
