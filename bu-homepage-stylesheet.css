@@ -19,7 +19,9 @@ html, body {max-width: 100%; overflow-x: hidden;}
 
 @media only screen and (max-width: 390px) {.company__school-name{display: none !important;}#bu-html-import{height:1000px !important;}}
 
+/*
 @media only screen and (max-width: 576px) {.header__inner {display: flex; align-items: center; align-content: center;justify-content:space-around; padding-right: 5px;}.nav--top {order:3; margin:0px !important;}#bu-html-import{height:500px !important;}}
 
 @media only screen and (max-width: 830px) {.company__school-name{display: none !important;}#bu-html-import{height:500px !important;}}
+*/
 
